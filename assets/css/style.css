@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #151515 url("../images/bkg.png") 0 0;
   color: #eaeaea;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
@@ -49,25 +49,24 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
+  color: #acfc50;
+  text-shadow: 0 1px 1px rgba(183, 243, 71, 0.3),
+               0 0 5px rgba(183, 243, 71, 0.3),
+               0 0 10px rgba(183, 243, 71, 0.3);
+  /* letter-spacing: -1px; */
   -webkit-font-smoothing: antialiased;
   margin-left: 0;
 }
 
-
 header h1:before {
-  content: "./ ";
-  font-size: 24px;
+  content: "/";
+  /* font-size: 26px; */
 }
 
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #888;
+  color: #aaa;
 }
 
 #downloads .btn {
@@ -91,11 +90,11 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  color: #acfc50;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  text-shadow: 0 1px 1px rgba(183, 243, 71, 0.3),
+               0 0 5px rgba(183, 243, 71, 0.3),
+               0 0 10px rgba(183, 243, 71, 0.3);
 }
 
 #main_content h1 {
@@ -117,7 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 #main_content h5 {
   font-size: 12px;
   text-transform: uppercase;
-  color: #999;
   margin: 0 0 5px 0;
 }
 
@@ -131,6 +129,10 @@ h1, h2, h3, h4, h5, h6 {
 dt {
   font-style: italic;
   font-weight: bold;
+}
+
+ul li {
+  list-style-image:url('../images/bullet.png');
 }
 
 blockquote {
@@ -156,7 +158,7 @@ code.highlighter-rouge {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
+  color: #ff6060;
   border-radius: 2px;
 }
 
@@ -196,9 +198,9 @@ hr {
   color: rgba(255, 255, 255, 0.8);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  text-shadow: 0 -1px 0 rgb(161, 213, 255);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
@@ -225,7 +227,12 @@ hr {
 
 a {
   color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  text-shadow: 0 0 5px rgba(128, 194, 255, 0.6);
+}
+
+a:hover {
+  color: #2cb2ff;
+  text-shadow: 0 0 5px rgba(128, 194, 255, 0.6);
 }
 
 /* Clearfix */
@@ -309,4 +316,12 @@ a {
   .ss {
     color: #90a959;
   }
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-top: 1px dashed #b5e853;
+  padding: 20px 0;
+  margin: 40px 0 0 0;
 }
